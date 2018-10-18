@@ -1,7 +1,7 @@
 //This file host all the components of our application
 import React, { Component } from 'react';
 import './App.css';
-import Home from './components/Home';
+import BarreRecherche from './BarreRecherche';
 
 class App extends Component {
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
 
       <div className="App">
-        <Home />
+        <BarreRecherche />
       </div>   
 
     );

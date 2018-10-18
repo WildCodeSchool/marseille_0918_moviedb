@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from 'axios';
+import Cardo from './Cardo'
 
 class BarreRecherche extends Component {
   constructor(props) {
@@ -49,10 +50,34 @@ class BarreRecherche extends Component {
  
 
   render() {
+    if(this.state.movies.length > 0){
+      console.log("hello", this.state.movies)
+      return (
+      <div className="movycard">
+          {this.state.movies.map((item,index) => {
+            if (index < 1) {
+              return <Cardo
+                     key={index}
+                     title={item.title}
+                     date={item.release_date}
+                     resume={item.overview}
+                     vote={item.vote_average}
+                     voteco={item.vote_count}
+                     backdrop={item.backdrop_path}
+                      />
+              }
+          })
+      }
+      
+    
+  </div>
+  )}
+
+
     console.log(this.state);
     return (
-      <div>
-        <h1>{this.state.Film}</h1>
+      <section>
+    
         
 
         <label htmlFor="title">
@@ -68,8 +93,9 @@ class BarreRecherche extends Component {
           onClick={() => this.getFilm()}
         >Voir la Fiche Film</button>
         </div>
+        <cardos/>
         
-      </div>
+      </section>
     );
   }
 }
