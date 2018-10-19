@@ -1,0 +1,20 @@
+.titleCineasta{
+    color: white;
+    font-family: LeagueSpartan;
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+}
+.subtitle{
+    color: white;
+    font-family: LeagueSpartan;
+    font-size: 1.7em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(LeagueSpartan-Bold.otf);
+}
