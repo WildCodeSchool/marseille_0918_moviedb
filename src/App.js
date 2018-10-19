@@ -1,7 +1,6 @@
 //This file host all the components of our application
 import React, { Component } from 'react';
 import './App.css';
-import Home from './Home';
 import MovieCard from './components/movieCard/MovieCard';
 
 
@@ -9,9 +8,12 @@ class App extends Component {
 
   render() {
     return (
-    
+      <div className="App">
+      <Home />
+     
+    </div>  
       
-    <h1>page app reb...</h1>
+  
 
 
 
