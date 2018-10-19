@@ -1,0 +1,52 @@
+
+.card-body{
+    color: white;
+    background-color: black;
+   
+}
+
+
+.card-title  {
+    font-family: 'LeagueSpartan';
+    
+
+}
+
+.sizeletter {
+    font-size: 160%;
+    font-family: 'LeagueSpartan';
+}
+
+.card-subtitle {
+    font-family: 'LeagueSpartan';
+    
+}
+
+.h5 {
+    font-size: 20px;
+
+}
+.card-text {
+    font-size: 20px;
+}
+
+
+.a {
+    color: white;
+}
+
+
+
+
+.card-link  {
+   color: rgb(0, 255, 13);   
+}
+
+.card-link:hover {
+    color: rgb(0, 187, 16);   
+ }
+
+ @font-face {
+     font-family: 'LeagueSpartan';
+     src: url('./LeagueSpartan-Bold.otf');
+ }
