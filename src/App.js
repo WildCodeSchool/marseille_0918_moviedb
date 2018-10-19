@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import MovieCard from './components/movieCard/MovieCard';
+import Home from './components/shared/home/Homes';
 
 
 class App extends Component {
