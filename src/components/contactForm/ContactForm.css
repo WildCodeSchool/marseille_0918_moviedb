@@ -1,12 +1,12 @@
-.FormFilm {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 30%;
+
+  .formContainer{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    display: flex;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7VLEe3o3UaBrOTiU5Ob31YA_SgKm-33rbEkNFbjBJiAmULfkBA");
-    border-radius: 5px;
     box-shadow: 10px 5px 5px darkgrey;
-  }
+   }
   
   #name:hover,#comment:hover,#email:hover {
     transform: scale(1.05);
@@ -15,7 +15,9 @@
   
   fieldset {
     border-radius: 5px;
-  
+    margin: auto;
+    width: 350px;
+    
   }
   
   
@@ -26,13 +28,18 @@
   }
   
   .form-data {
-    margin: 20px;
+    margin: 50px;
   }
   h1, legend, label{
-    color: chartreuse;
+    
+    color: rgb(245, 221, 86);
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  
+    display: grid; 
+  }
+
+  h1 .titrecontact {
+    margin: auto;
   }
   
   label {
@@ -48,7 +55,6 @@
     border: 2px solid black;
     padding: 5px;
     display: flex;
-    display: block;
     margin-right: auto;
     margin-left: auto;
   

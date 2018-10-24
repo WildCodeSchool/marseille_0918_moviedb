@@ -30,10 +30,10 @@ class ContactForm extends React.Component {
     render() {
       return (
         <Container className="contactForm">
-          <h1>Contact</h1>
-          <h2>Des ameliorations?, Questions?, venez en discuter </h2>
+          <h1 className="titrecontact">Contact</h1>
+          <h2 className="titrecontact">Des ameliorations?, Questions?, venez en discuter </h2>
 
-        <form onSubmit={this.submitForm}>
+        <form className="formContainer" onSubmit={this.submitForm}>
           <fieldset>
             <div className="centerContent">   
                 <label className="title" htmlFor="name"> Name :</label>
