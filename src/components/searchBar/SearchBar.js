@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom'
 import {baseUrl} from '../../helpers/stringHelpers'
+import './SearchBar.css'
 const APIKEY = "9a310b7d46fbc7e00fbc62646ecc790c";
 
 export default class SearchBar extends Component {
@@ -32,6 +33,7 @@ export default class SearchBar extends Component {
     return (
       <div>
         <input
+          className="searchBar"
           style={{caretColor: "red"}}
           type="search"
           name="searchBar"
@@ -47,16 +49,22 @@ export default class SearchBar extends Component {
               {
                 movies.map((movie) => {
                   return (
+                    
                     <li
+                      className="listSearchBar"
                       key={movie.id}
                       style={{color: "white", cursor: 'pointer'}}
                       onClick={() => this.setSelectedMovie(movie)}
                     >
+                    
                     <Link to={`/movie/${movie.id}`}>
-                      <img
+                      <img 
+                        className="imgSearchBar"
                         src={baseUrl(movie.backdrop_path)}
                       />
-                        {movie.title}
+                        <p className="movieSearchBar">
+                          {movie.title}
+                        </p>
                     </Link>
                     </li>
                   )

@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/shared/home/Homes';
 import SearchBar from './components/searchBar/SearchBar';
 import singleMovie from './components/movieCard/singleMovie';
+import ContactForm from './components/contactForm/ContactForm';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
       <div>
         <Home/>
         <SearchBar/>
+        <ContactForm/>
         <Switch>
             <Route exact path="/movie/:id" component={singleMovie} />
         </Switch> 
