@@ -6,21 +6,21 @@ import Home from './components/shared/home/Homes';
 import SearchBar from './components/searchBar/SearchBar';
 import singleMovie from './components/movieCard/singleMovie';
 import ContactForm from './components/contactForm/ContactForm';
+import { containerFluid } from 'reactstrap';
 
 
 class App extends Component {
 
   render() {
     return (
-      <div>
+      <containerFluid>
         <Home/>
         <SearchBar/>
         <ContactForm/>
         <Switch>
             <Route exact path="/movie/:id" component={singleMovie} />
-        </Switch> 
-
-      </div>
+        </Switch>  
+      </containerFluid>
     );
   }
 }

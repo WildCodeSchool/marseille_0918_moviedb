@@ -8,8 +8,7 @@ import './Home.css';
 export default class Homes extends Component {
   render() {
     return (
-      <div className="homeComponent">
-        <Icones />
+      <div>
         <Header />
         
         <Footer />
