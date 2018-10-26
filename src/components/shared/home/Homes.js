@@ -13,13 +13,7 @@ export default class Homes extends Component {
       <div className="homeComponent">
         <Icones />
         <Header />
-        <Container>
-        <Row>
-          <Col sm={{ size: 6, offset: 3 }} md={{size: 1, offset: 6}}><ContactForm/></Col>
-        </Row> 
         
-      </Container>
-        <Footer />
 
       </div>
     )

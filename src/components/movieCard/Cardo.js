@@ -21,7 +21,7 @@ class Cardo extends Component {
                 <Card>
                   <CardBody>
                     <p className="sizeletter">{title}</p>
-                    <CardSubtitle>Date de sortie : {releaseDate}</CardSubtitle>
+                    <CardSubtitle>Release date : {releaseDate}</CardSubtitle>
                   </CardBody>
                     <img width="100%" src={baseUrl(backdrop_path)} alt="Card image cap" />
                   <CardBody>
