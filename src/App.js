@@ -16,7 +16,6 @@ class App extends Component {
       <containerFluid>
         <Home/>
         <SearchBar/>
-        <ContactForm/>
         <Switch>
             <Route exact path="/movie/:id" component={singleMovie} />
         </Switch>  
