@@ -1,45 +1,45 @@
 import React, { Component } from 'react'
-import { Card, CardText, CardBody, CardLink, CardSubtitle, Row, Container, Col } from 'reactstrap';
-import './Cardo.css'
-import { baseUrl } from '../../helpers/stringHelpers'
+import { Row, Col, Progress } from 'reactstrap';
+import './Cardo.css';
+import { baseUrl } from '../../helpers/stringHelpers';
 
-class Cardo extends Component {
+export default class Cardo extends Component {
  
   render() {
     // console.log(this.props.date.split("-").reverse().join("-"))
-    let {title, backdrop_path, vote_average, vote_count, overview } = this.props.movie
+    let {title, poster_path, vote_average, vote_count, overview } = this.props.movie
     let {releaseDate } = this.props
     if(releaseDate){
       releaseDate = releaseDate.split("-").reverse().join("-");
     }
-    console.log(title, backdrop_path, vote_average, vote_count, releaseDate, overview )
+
     return (
-    <Container>
-      <div className="movieCard">
-        <Row>
-            <Col sm="6">
-                <Card>
-                  <CardBody>
-                    <p className="sizeletter">{title}</p>
-                    <CardSubtitle>Release date : {releaseDate}</CardSubtitle>
-                  </CardBody>
-                    <img width="100%" src={baseUrl(backdrop_path)} alt="Card image cap" />
-                  <CardBody>
-                  <CardText>{overview || "No resume found !"}</CardText>
-                  <CardLink href="#">Average vote : {vote_average} Vote count : {vote_count}</CardLink>
-                  </CardBody>
-                </Card>
-            </Col>
-          </Row>
-        </div>
-      </Container>
+      <div className="pouet333">
+        <Row className="englobeCard">
+          <Col sm="2" xs="12" >
+            <img className="posterCard" src={baseUrl(poster_path)} />
+          </Col>       
+          <Col sm="10" xs="12" className="pouet46">
+              <div className="pouet55">
+                <div className="pouet78">
+                  <div className="textCard">
+                      <p className="sizeletter">{title}</p>
+                      <p className="overView">{overview || "No resume found !"}</p>
+                    <div className="pouet555">
+                    <div className="text-left">Average vote /10</div>
+                      <Progress multi>
+                        <Progress bar value={vote_average} animated color="info" max={10}>{vote_average}</Progress>
+                      </Progress>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </Col>
+        </Row>
+      </div>
     )
   }
 }
-
-
-
-export default Cardo;
 
 
 

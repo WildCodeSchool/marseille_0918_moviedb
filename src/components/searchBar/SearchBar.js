@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom'
-import {baseUrl} from '../../helpers/stringHelpers'
-import './SearchBar.css'
+import {Link} from 'react-router-dom';
+import {baseUrl} from '../../helpers/stringHelpers';
+import './SearchBar.css';
+import { Row, Col, Container } from 'reactstrap';
 const APIKEY = "9a310b7d46fbc7e00fbc62646ecc790c";
 
 export default class SearchBar extends Component {
@@ -18,62 +19,83 @@ export default class SearchBar extends Component {
     this.setState({searchValue})
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&language=en-US&query=${searchValue}&page=1&include_adult=false`
     axios.get(url)
-      .then(response  => {
-        this.setState({movies: response.data.results});
-    })
-  }
+      .then(response  => { 
+        if (response.error) {
+          alert(response.error)
+        } else {
+          this.setState({ movies: response.data.results });
+        }
+        
+    }) 
+  }; 
 
-  setSelectedMovie(movie){
+  setSelectedMovie(movie) {
     this.setState({searchValue: movie.title,  movies: [movie]})
   }
   
   render() {
     let {movies, searchValue} = this.state;
-    console.log("IN SEARCHBAR RENDER", this.props)
     return (
+
       <div>
+
         <input
           className="searchBar"
-          style={{caretColor: "red"}}
+          style={{caretColor: "grey"}}
           type="search"
           name="searchBar"
+          placeholder="search for a movie" 
           value={searchValue}
           onChange={(event) => this.getFilm(event.target.value)}
         />
+
         {
           movies.length > 0 &&
           movies[0].title != searchValue &&
           searchValue != '' &&
-          <div>
-            <ul>
+          
+            <ul className="testBack">
+
               {
                 movies.map((movie) => {
                   return (
-                    
+
                     <li
                       className="listSearchBar"
                       key={movie.id}
                       style={{color: "white", cursor: 'pointer'}}
                       onClick={() => this.setSelectedMovie(movie)}
                     >
-                    
-                    <Link to={`/movie/${movie.id}`}>
-                      <img 
-                        className="imgSearchBar"
-                        src={baseUrl(movie.backdrop_path)}
-                      />
-                        <p className="movieSearchBar">
-                          {movie.title}
-                        </p>
-                    </Link>
+
+                      <Link to={`/movie/${movie.id}`} className="pouet23">      
+                        <Row className="pouet88">
+                        <Col sm="1" className="okpouet">
+                          <img className="imgSearchBar" src={baseUrl(movie.poster_path)}/>
+                        </Col>
+                        </Row>
+                        <Row className="pouet66">
+                        <Col sm="11">
+                        
+                          <p className="movieSearchBar">
+                            {movie.title}
+                          <br />
+                            {movie.release_date}
+                          </p>
+                        </Col>       
+                        </Row>
+
+                      </Link>
                     </li>
                   )
                 })
               }
             </ul>
-          </div>
+          
+           //message "no results found"
         }
+                
       </div>
+
     )
   }
 }

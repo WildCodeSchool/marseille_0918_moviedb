@@ -7,21 +7,20 @@ import SearchBar from './components/searchBar/SearchBar';
 import singleMovie from './components/movieCard/singleMovie';
 import ContactForm from './components/contactForm/ContactForm';
 import Footer from './components/shared/footer/Footer';
+import { containerFluid } from 'reactstrap';
 
 
 class App extends Component {
 
   render() {
     return (
-      <div>
+      <containerFluid>
+        <SearchBar/>
         <Homes/>
-        <SearchBar />
         <Switch>
           <Route exact path="/movie/:id" component={singleMovie} />
           <Route exact path="/contact-us" component={ContactForm} />
-        </Switch>
-        <Footer />
-      </div>
+      </containerFluid>
     );
   }
 }
