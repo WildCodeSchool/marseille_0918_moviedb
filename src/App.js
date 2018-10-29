@@ -15,11 +15,13 @@ class App extends Component {
   render() {
     return (
       <containerFluid>
-        <SearchBar/>
         <Homes/>
+        <SearchBar/>
         <Switch>
           <Route exact path="/movie/:id" component={singleMovie} />
           <Route exact path="/contact-us" component={ContactForm} />
+        </Switch> 
+        <Footer/> 
       </containerFluid>
     );
   }

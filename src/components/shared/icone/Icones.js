@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Icones.css'
+//import './Icones.css'
 import homeicone from './homeicone.png';
 import contacticone from './contacticone.png';
 import { Col, Container, Row } from 'reactstrap';
