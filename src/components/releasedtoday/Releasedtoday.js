@@ -63,7 +63,7 @@ export default class Releasedtoday extends Component {
             <div>
             {this.state.oftheday.map((item, index) => {
   
-                if (index < 5 ) {
+              if (index < 100 && item.overview !== "") {
                     return <Mocarday
                        key={index}
                        title={item.title}
