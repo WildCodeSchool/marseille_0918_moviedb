@@ -10,47 +10,37 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-
         <Row>
           <Col lg={{ size: 1, offset: 1 }} >
             <div className="iconeBoots">
               <NavLink
-                to="/">
-              <img className="icones" src={contacticone} alt="iconehome" />
-
+                to="/"
+                exact activeClassName="selected">
+                <img className="icones" src={homeicone} alt="iconehome" title="Home" />
               </NavLink>
-
               <NavLink
-                to="/contact-us">
-                <img className="icones" src={homeicone} alt="iconecontact" />
-
+                to="/contact-us"
+                exact activeClassName= "selected">
+                <img className="icones" src={contacticone} alt="iconecontact" title="Contact" />
               </NavLink>
-
-
-
               <NavLink
-                to="/released-today">
-                <img className="icones" src={logostar} alt="iconetoday" />
+                to="/released-today"
+                exact activeClassName="selected">
+                <img className="icones" src={logostar} alt="iconetoday" title="Today's releases" />
               </NavLink>
             </div>
           </Col>
-
         </Row>
-
-
-
         <Row>
-          <Col xs={{ size: 8, offset: 2 }} lg={{ size: 4, offset: 4 }} >
+          <Col>
             <div className="title">
-              <NavLink
-                to="/">
-                <p className="fullTitle"><span className="titleCineasta">cineasta,<br></br></span>
+              <NavLink to="/">
+                <p className="fullTitle"><span className="titleCineasta">cineasta,<br /></span>
                   <span className="subtitle">the SHORTER way to movie's release date ! and more...</span></p>
               </NavLink>
             </div>
           </Col>
         </Row>
-
       </div>
     )
   }

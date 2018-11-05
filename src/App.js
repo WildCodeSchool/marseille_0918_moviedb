@@ -7,6 +7,8 @@ import Home from './components/shared/home/Homes';
 import SearchBar from './components/searchBar/SearchBar';
 import singleMovie from './components/movieCard/singleMovie';
 import ContactForm from './components/contactForm/ContactForm';
+import Releasedtoday from './components/releasedtoday/Releasedtoday';
+
 
 export default class App extends Component {
   render() {
@@ -16,7 +18,8 @@ export default class App extends Component {
         <SearchBar />
         <Switch>
           <Route exact path="/movie/:id" component={singleMovie} />
-          <Route exact path="/contact-us" component={ContactForm} />
+          <Route path="/contact-us" component={ContactForm} />
+          <Route path="/released-today" component={Releasedtoday} />
         </Switch>
       </Container>
     );

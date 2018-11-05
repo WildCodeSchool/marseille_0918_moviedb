@@ -5,13 +5,11 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    
+    z-index: -1;
 }
-
 .lienFooter{
     text-decoration:none; 
     color: #888888;
-    
 }
 
 .lienFooter:hover{
