@@ -1,0 +1,97 @@
+.titleCineasta{
+    color: white;
+    font-family: LeagueSpartan;
+    font-size: 3.2em;
+    
+}
+
+
+.fullTitle {
+    text-align: center;
+    /* margin-top: -100px; */
+    margin-top: -50px;
+} 
+
+.subtitle{
+    color: white;
+    font-family: LeagueSpartan;
+    font-size: 1.9em;
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(LeagueSpartan-Bold.otf);
+}
+
+.text-button  {
+ 
+   margin-top: 9vh;
+   text-align: center;
+   opacity:1;
+    
+   
+}
+.iconeBoots .text-button:hover  {
+    margin-top: 9vh;
+    text-align: center;
+    opacity:1;
+     
+    
+ }
+
+.icones{
+    width: 7vh;
+    margin-top: 3vh;
+    position: relative; 
+     z-index: 1;
+     /* margin-left: 4vh;  */
+}
+
+.icones:hover {
+    transition: 0.6s;
+    transform: rotate(360deg);
+}
+
+.icones:active {
+    transform: scale(2);
+}
+
+.iconeBoots {
+    /* margin: 20px; */
+    display: flex;
+    justify-content: space-between;
+    margin-top:1vh;
+    /* width: 30vw; */
+}
+
+.title a:hover {
+    text-decoration: none;
+
+}
+
+
+@media (max-width:576px) {
+   
+.icones {
+    width: 10vw;
+    margin-top: 20px;
+    
+   
+}
+
+
+
+.iconeBoots {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    /* justify-content: space-around; */
+    /* margin-left: -40%; 
+     margin-right: -23%;
+    margin-bottom: 20px; */
+    width: 50%;
+   
+    
+}
+	}

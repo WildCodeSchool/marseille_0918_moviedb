@@ -1,0 +1,63 @@
+.formContainer{
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  display: flex;
+  box-shadow: 10px 5px 5px darkgrey;
+ }
+
+.titrecontact{
+  text-align: center;
+  color: aliceblue;
+}
+#name:hover,#comment:hover,#email:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+fieldset {
+  border-radius: 5px;
+  margin: auto;
+  width: 350px;
+  
+}
+
+
+Button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-data {
+  margin: 50px;
+}
+h1, legend, label{
+  
+  color: rgb(221, 238, 240);
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: grid; 
+}
+
+h1 .titrecontact {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#name, #comment , #email {
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+
+}
