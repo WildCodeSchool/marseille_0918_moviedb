@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactForm.css';
-import { Container } from 'reactstrap';
+import { Container, Button } from 'reactstrap';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -10,6 +10,11 @@ class ContactForm extends React.Component {
       email: '',
       comment: ''
     };
+
+    /* this.handleChange = this.handleChange.bind(this);
+     this.handleSubmit = this.handleSubmit.bind(this);
+     this.sendMail = this.sendMail.bind(this);
+     */
   }
 
   submitForm = (event) => {
@@ -25,26 +30,25 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="contactForm">
-        <h1 className="titrecontact">Contact</h1>
-        <h3 className="titrecontact">Des ameliorations ? Questions ? venez en discuter : </h3>
+
+        <h3 className="titrecontact">any questions ? come to discuss ! </h3>
 
         <form className="formContainer" onSubmit={this.submitForm}>
           <fieldset>
-
             <div className="centerContent">
-              <label className="title" htmlFor="name"> Name :</label>
+              <label className="title" htmlFor="name">name :</label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Title movie"
+                placeholder="Name"
                 onChange={this.onChange}
                 value={this.state.name}
               />
             </div>
 
             <div className="form-data">
-              <label className="title" htmlfor="email">Email :</label>
+              <label className="title" htmlfor="email">email :</label>
               <input
                 type="email"
                 name="email"
@@ -65,15 +69,12 @@ class ContactForm extends React.Component {
                 onChange={this.onChange}
                 value={this.state.comment}
               />
-
-              <button color="warning">send</button>
             </div>
 
+            <Button className="button" color="secondary">send</Button>{' '}
           </fieldset>
         </form>
-
       </div>
-
     );
   }
 }
