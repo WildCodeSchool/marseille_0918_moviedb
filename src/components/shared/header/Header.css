@@ -6,9 +6,12 @@
 
 .fullTitle {
     text-align: center;
-    /* margin-top: -100px; */
     margin-top: -50px;
 } 
+
+
+.allTitle a:hover {
+}
 
 .subtitle{
     color: white;
@@ -53,12 +56,10 @@
 }
 
 .iconeBoots {
-    /* margin: 20px; */
     display: flex;
     justify-content: space-between;
     margin-top:1vh;
 
-    /* width: 30vw; */
 }
 
 .title {
@@ -82,37 +83,33 @@
 
 @media (max-width:576px) {
    
-.icones {
-    width: 10vw;
-    margin-top: 20px; 
-}
+    .icones {
+        width: 10vw;
+        margin-top: 20px; 
+    }
 
-.iconeBoots {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    /* justify-content: space-around; */
-    /* margin-left: -40%; 
-     margin-right: -23%;
-    margin-bottom: 20px; */
-    width: 50%;
-}
-.titleCineasta {
-    font-size: 2.4em !important;
+    .iconeBoots {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+    }
+    .titleCineasta {
+        font-size: 2.4em !important;
 
-}
+    }
 
-.subtitle {
-    font-size: 1.0em !important;    
-}
+    .subtitle {
+        font-size: 1.0em !important;    
+    }
 
-.fullTitle {
-    margin-top: 3vh;
-}
+    .fullTitle {
+        margin-top: 3vh;
+    }
 
-.title {
-    width: 100%;
-}
+    .title {
+        width: 100%;
+    }
 
 }
 
@@ -145,5 +142,5 @@
         width: 100%;
     }
     
-    }
+}
     

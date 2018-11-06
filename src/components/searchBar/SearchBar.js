@@ -70,7 +70,7 @@ export default class SearchBar extends Component {
                           <p className="movieSearchBar">
                             {movie.title}
                             <br />
-                            {movie.release_date}
+                            {movie.release_date.split("-").reverse().join("-")}
                           </p>
                         </Col>
                       </Row>

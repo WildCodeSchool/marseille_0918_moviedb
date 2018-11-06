@@ -34,7 +34,7 @@ export default class Header extends Component {
         <Row>
           <Col>
             <div className="title">
-              <NavLink to="/">
+              <NavLink className="allTitle" to="/" style={{ textDecoration: 'none' }}>
                 <p className="fullTitle"><span className="titleCineasta">cineasta,<br /></span>
                   <span className="subtitle">the SHORTER way to movie's release date ! and more...</span></p>
               </NavLink>

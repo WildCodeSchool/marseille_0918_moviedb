@@ -15,7 +15,7 @@ export default class singleMovie extends Component {
   }
 
   fetchMovieById(){
-    fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=5db1cb3add526f8a1516b0e4b55c9404&language=fr`)
+    fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=5db1cb3add526f8a1516b0e4b55c9404&language=en`)
     .then(response => response.json()) 
     .then(response => this.setState({movie: response, currentMovieId: response.id}))
   }

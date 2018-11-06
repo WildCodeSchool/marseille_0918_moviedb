@@ -55,10 +55,27 @@ input:focus {
     margin: 15px 0px 0px -30px;
 }
 
+.listSearchBar:hover {
+    background-color: #888888;
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+.listSearchBar a:hover {
+    text-decoration: none;
+}
+.textEngloge {
+    margin-left: 45px !important;
+}
+
 @media (max-width:990px) {
     .searchBar{
         width: 65%;
         border: 5px solid #888888;
+        margin-top: 20px;
+    }
+
+    input {
     }
     
     input:focus {
@@ -76,8 +93,10 @@ input:focus {
 
 @media (max-width:576px) {
     .searchBar{
-        width: 75%;
+        width: 85%;
         border: 4px solid #888888;
+        padding: 5px;
+
     }
     
     .testBack {

@@ -12,15 +12,13 @@ export default class Mocarday extends Component {
 
   return (
     <div className="card-size">
-   
+
       <Card>
-       
         <CardBody>
           <CardTitle>{this.props.title}</CardTitle>
           <CardSubtitle>Release : {this.props.date.split("-").reverse().join("-")}</CardSubtitle>
           <CardText>{this.props.resume || "No resume found !"}</CardText>
           <Progress value={this.props.vote}>{this.props.vote}%</Progress>
-         
         </CardBody>
         <img width="100%" className="posterCard" src={baseUrl(this.props.poster)} alt="No picture yet !" />
       </Card>
