@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Mocarday from '../movieCard/Mocarday'
+import Carday from '../movieCard/Carday'
 
 export default class Releasedtoday extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ export default class Releasedtoday extends Component {
             {this.state.oftheday.map((item, index) => {
   
               if (index < 100 && item.overview !== "") {
-                    return <Mocarday
+                    return <Carday
                        key={index}
                        title={item.title}
                        date={item.release_date}
