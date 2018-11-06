@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Mocarday from '../movieCard/Mocarday'
+
 import Carday from '../movieCard/Carday'
 
 export default class Releasedtoday extends Component {

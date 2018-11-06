@@ -22,6 +22,7 @@ export default class Cardo extends Component {
           <Col className="textEngloge">
             <div className="textCard">
               <p className="sizeletter">{title}</p>
+              <p>{this.props.directorName}</p>
               <CardSubtitle>Release : {release_date} <br/></CardSubtitle>
               <p className="overView">{overview || "No resume found !"}</p>
               <div className="text-left">Average vote :</div>
