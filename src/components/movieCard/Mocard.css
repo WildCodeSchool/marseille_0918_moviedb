@@ -1,0 +1,97 @@
+
+.card-body{
+  color: white;
+  background-color: rgba(27, 27, 27, 0.788);
+ 
+}
+
+.card {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  
+}
+
+.card-title  {
+  font-family: 'LeagueSpartan';
+  font-size: 2em;
+  margin-bottom: 5vh;
+}
+
+
+.card-subtitle {
+  font-family: 'Montserrat';
+  padding-top: 1vh;
+  font-size: 1.2em;
+}
+
+
+.card-text {
+  
+  font-family: 'Montserrat';
+  font-size: 1em;
+  margin-top: 5vh;
+
+}
+
+
+.a {
+  color: white;
+}
+
+
+
+
+.card-link  {
+ color: rgb(0, 255, 13);   
+}
+
+.card-link:hover {
+  color: rgb(0, 187, 16);   
+}
+
+
+
+@font-face {
+   font-family: 'LeagueSpartan';
+   src: url('./LeagueSpartan-Bold.otf');
+}
+
+@font-face {
+  @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto|Montserrat');
+
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
+ }
+
+ @media (max-width:3000px) {
+  .card-size  {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  }
+@media (max-width:992px) {
+.card-size  {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media (max-width:768px) {
+.card-size  {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media (max-width:576px) {
+.card-size  {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+ 
