@@ -11,7 +11,7 @@ export default class Header extends Component {
     return (
       <div>
         <Row>
-          <Col lg={{ size: 1, offset: 1 }} >
+          <Col lg={{ size: 1}} >
             <div className="iconeBoots">
               <NavLink
                 to="/"
