@@ -5,6 +5,8 @@
     mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); /*mettre bottom avec jquerry*/
 }
 
+
+
 .textCard {
     margin: 15px 4px 0 105px;
 }
@@ -66,23 +68,27 @@
  @media (max-width:576px) {
 
     .textCard {
-        margin: 0px;
-        
+        margin-left: 0px;
+    }
+
+    .overView {
+        width: 150%;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     .textEngloge {
-        flex-grow: 0;
+        flex-grow: 0 !important;
+        width: 100%;
     }
+
      .posterCard {
         border-radius: 10px;
-        width: 290px;
+        width: 345px;;
         mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     } 
 
-    .card-subtitle {
-        margin: 10px 0 10px 0 !important;
-        font-weight: bold;
-    }
 
     .englobeCard {
         margin-top: 25px;

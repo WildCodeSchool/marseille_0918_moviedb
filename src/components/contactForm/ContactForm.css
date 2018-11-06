@@ -2,18 +2,17 @@
   margin-right: auto;
   margin-left: auto;
   width: 50%;
-  padding: 10px;
+  padding: 1vh;
   margin-bottom: 30px;
   background: black;
   border-radius: 10px;
-
   -webkit-border-radius:10px;
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   }
 
 
   .titrecontact {
-    margin-top: 30px;
+    margin-top: 5px;
   }
 
   .centerContent{
@@ -106,5 +105,4 @@ label {
     -webkit-border-radius:10px;
     box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
     }
-
 }
