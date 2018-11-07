@@ -50,7 +50,7 @@ export default class Releasedtoday extends Component {
       .then(data => this.setState({ oftheday: data.results, currentMovieId: data.results.id }))
      
       .catch(error => {
-        alert("oups")
+        alert("oups, rechargez la page !")
       })
       console.log("whit", this.state.oftheday)
       
@@ -58,9 +58,12 @@ export default class Releasedtoday extends Component {
 
 
   render() {
+    
     if(this.state.oftheday.length > 0){
       console.log("what", this.state.oftheday)
-      
+      console.log("ID", this.state.currentMovieId)
+
+
       
       
       
