@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactForm.css';
-import { Container, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -10,17 +10,12 @@ class ContactForm extends React.Component {
       email: '',
       comment: ''
     };
-
-    /* this.handleChange = this.handleChange.bind(this);
-     this.handleSubmit = this.handleSubmit.bind(this);
-     this.sendMail = this.sendMail.bind(this);
-     */
   }
 
   submitForm = (event) => {
     event.preventDefault();
     console.log(JSON.stringify(this.state));
-    alert(`Your message is sent to ${this.state.email}`)
+    alert(`Thank you for your message ${this.state.email} !`)
   }
 
   onChange = (event) => {
@@ -30,9 +25,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="contactForm">
-
         <h3 className="titrecontact">any questions ? come to discuss ! </h3>
-
         <form className="formContainer" onSubmit={this.submitForm}>
           <fieldset>
             <div className="centerContent">
@@ -46,7 +39,6 @@ class ContactForm extends React.Component {
                 value={this.state.name}
               />
             </div>
-
             <div className="form-data">
               <label className="title" htmlfor="email">email :</label>
               <input
@@ -58,7 +50,6 @@ class ContactForm extends React.Component {
                 value={this.state.email}
               />
             </div>
-
             <div className="form-data">
               <label className="title" htmlFor="comment"></label>
               <textarea
@@ -70,7 +61,6 @@ class ContactForm extends React.Component {
                 value={this.state.comment}
               />
             </div>
-
             <Button className="button" color="secondary">send</Button>{' '}
           </fieldset>
         </form>

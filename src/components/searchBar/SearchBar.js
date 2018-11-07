@@ -41,7 +41,7 @@ export default class SearchBar extends Component {
           style={{ caretColor: "grey" }}
           type="search"
           name="searchBar"
-          placeholder="search for a movie"
+          placeholder="search for a movie in every languages"
           value={searchValue}
           onChange={(event) => this.getFilm(event.target.value)}
         />

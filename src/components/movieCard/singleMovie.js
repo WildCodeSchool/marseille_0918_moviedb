@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Cardo from './Cardo';
 
 export default class singleMovie extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       movie: {},
@@ -47,20 +47,14 @@ export default class singleMovie extends Component {
     if(this.props.match.params.id != this.state.currentMovieId){
       this.fetchMovieById(this.props.match.params.id)
       this.fetchMovieByDetail(this.props.match.params.id) 
-    }
-    console.log(this.state.movie)
-    console.log(this.state.currentMovieId)
-    console.log(this.state.directorName)
-     
-    
-      
-    
+    }    
     return (
       <div>
         <Cardo 
           movie={this.state.movie} 
           releaseDate={this.state.movie.release_date}
-          directorName={this.state.directorName}/>
+          directorName={this.state.directorName} 
+        />
       </div>
     )
   }

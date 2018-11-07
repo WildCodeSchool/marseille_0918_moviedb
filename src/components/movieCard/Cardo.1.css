@@ -5,12 +5,6 @@
     mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-.director {
-    font-family: 'Montserrat';
-    font-size: 0.9em;
-    margin-bottom: -0.1vh;
-}
-
 .textCard {
     margin: 15px 4px 0 105px;
 }
@@ -68,15 +62,21 @@
     @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto|Montserrat');
  }
 
+ 
  @media (max-width:576px) {
 
     .textCard {
         margin-left: -5vh;
+        text-align: left;
     }
 
     .overView {
-        width: 200%;
+        width: 110%;
+    }
 
+    .sizeletter {
+        text-align: left;
+        width: 40vh;
     }
 
     .textEngloge {

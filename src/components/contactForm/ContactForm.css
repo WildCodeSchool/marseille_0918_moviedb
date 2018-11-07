@@ -3,17 +3,17 @@
   margin-left: auto;
   width: 50%;
   padding: 1vh;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
   background: black;
   border-radius: 10px;
   -webkit-border-radius:10px;
   box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
-  }
-
+}
 
   .titrecontact {
     margin-top: 5px;
-  }
+}
 
   .centerContent{
   margin-top: 20px;
@@ -47,7 +47,6 @@ fieldset .title {
   font-family: LeagueSpartan;
 }
 
-
 button.button.btn.btn-secondary {
   display: flex;
   margin-right: auto;
@@ -75,7 +74,6 @@ label {
   text-align: center;
 }
 
-
 #name, #comment , #email {
   border-radius: 5px;
   margin: 10px;
@@ -84,15 +82,15 @@ label {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-
 }
 
 @font-face {
   font-family: LeagueSpartan;
-  src: url(LeagueSpartan-Bold.otf);
+    src: url('../shared/header/LeagueSpartan-Bold.otf');
 }
 
 @media (max-width:576px) {
+  
   .contactForm{
     margin-right: auto;
     margin-left: auto;
@@ -101,7 +99,6 @@ label {
     margin-bottom: 30px;
     background: black;
     border-radius: 10px;
-  
     -webkit-border-radius:10px;
     box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
     }
