@@ -48,7 +48,7 @@ export default class singleMovie extends Component {
       this.fetchMovieById(this.props.match.params.id)
       this.fetchMovieByDetail(this.props.match.params.id) 
     }
-    console.log(this.state.movie.release_date)
+    console.log(this.state.movie)
     console.log(this.state.currentMovieId)
     console.log(this.state.directorName)
      
