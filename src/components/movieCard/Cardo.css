@@ -5,6 +5,12 @@
     mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+.director {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    margin-bottom: -0.1vh;
+}
+
 .textCard {
     margin: 15px 4px 0 105px;
 }

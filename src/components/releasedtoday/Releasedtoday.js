@@ -6,7 +6,7 @@ export default class Releasedtoday extends Component {
     super(props);
     this.state = {
       oftheday: [],
-      currentMovieId: '',
+      currentMovieId: null,
       date: '',
     }
   }
@@ -42,30 +42,30 @@ export default class Releasedtoday extends Component {
       .then(response => response.json())
       .then(data => this.setState({ oftheday: data.results, currentMovieId: data.results.id }))
       .catch(error => {
-        alert("oups")
+        alert("oups, rechargez la page !")
       })
-    console.log("what", this.state.oftheday)
   }
 
   render() {
-    if (this.state.oftheday.length > 0) {
-      console.log("what", this.state.oftheday)
-      return (
-        <div>
-          {this.state.oftheday.map((item, index) => {
-            if (index < 100 && item.overview !== "") {
-              return <Carday
-                key={index}
-                title={item.title}
-                date={item.release_date}
-                resume={item.overview}
-                vote={item.vote_average}
-                voteco={item.vote_count}
-                poster={item.poster_path}
-              />
-            }
-          })
-          }
+    if(this.state.oftheday.length > 0){
+        return (
+            <div>
+            {this.state.oftheday.map((item, index) => {
+              if (index < 100 && item.overview !== "") {
+                    return 
+                      <Carday
+                         movId={item.id}
+                         key={index}
+                         title={item.title}
+                         date={item.release_date}
+                         resume={item.overview}
+                         vote={item.vote_average}
+                         voteco={item.vote_count}
+                         poster={item.poster_path}
+                       />
+                    }
+                })
+              }
         </div>
       )
     }
