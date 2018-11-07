@@ -21,8 +21,6 @@ export default class Cardo extends Component {
             <div className="textCard">
               <p className="sizeletter">{title}</p>
               <CardSubtitle>Released: {release_date} <br /></CardSubtitle>
-              <p className="sizeletter">{title}</p>              
-              <CardSubtitle>Release : {release_date} <br/></CardSubtitle>
               <p className="director">Director : {this.props.directorName}</p>
               <p className="overView">{overview || "No resume found !"}</p>
               <div className="text-left">Average vote:</div>

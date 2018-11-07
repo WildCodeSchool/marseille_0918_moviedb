@@ -47,25 +47,24 @@ export default class Releasedtoday extends Component {
   }
 
   render() {
-    if(this.state.oftheday.length > 0){
-        return (
-            <div>
-            {this.state.oftheday.map((item, index) => {
-              if (index < 100 && item.overview !== "") {
-                    return 
-                      <Carday
-                         movId={item.id}
-                         key={index}
-                         title={item.title}
-                         date={item.release_date}
-                         resume={item.overview}
-                         vote={item.vote_average}
-                         voteco={item.vote_count}
-                         poster={item.poster_path}
-                       />
-                    }
-                })
-              }
+    if (this.state.oftheday.length > 0) {
+      return (
+        <div>
+          {this.state.oftheday.map((item, index) => {
+            if (index < 100 && item.overview !== "") {
+              return <Carday
+                movId={item.id}
+                key={index}
+                title={item.title}
+                date={item.release_date}
+                resume={item.overview}
+                vote={item.vote_average}
+                voteco={item.vote_count}
+                poster={item.poster_path}
+              />
+            }
+          })
+          }
         </div>
       )
     }
