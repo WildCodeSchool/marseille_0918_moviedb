@@ -1,6 +1,8 @@
 # Project Title : "Cineasta"
 
-### You can see the project here : [link of the blog]()
+<a href="https://imgflip.com/gif/2lxeaj"><img src="https://i.imgflip.com/2lxeaj.gif" title="made at imgflip.com"/></a>
+
+### You can see the project here : [link of the blog](https://pacific-lowlands-87714.herokuapp.com/)
 
 # Presentation of the project
 "Projet 2 - L’école des fans (ReactJS / Redux / SCSS / ReactSTRAP), Mathias, Rebecca, Alexandra et Lisa"
@@ -27,6 +29,7 @@
 - [League Spartan](https://www.fontsquirrel.com/fonts/league-spartan)
 3. **Icons used** :
 - [IconFinder](https://www.iconfinder.com/)
+
 
 # Authors
 - Mathias
