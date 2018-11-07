@@ -6,9 +6,7 @@ import { baseUrl } from '../../helpers/stringHelpers';
 export default class Cardo extends Component {
 
   render() {
-    // console.log(this.props.date.split("-").reverse().join("-"))
     let { title, release_date, poster_path, vote_average, vote_count, overview } = this.props.movie
-    // let { releaseDate } = this.props
     if (release_date) {
       release_date = release_date.split("-").reverse().join("-");
     }
@@ -22,9 +20,9 @@ export default class Cardo extends Component {
           <Col className="textEngloge">
             <div className="textCard">
               <p className="sizeletter">{title}</p>
-              <CardSubtitle>Release : {release_date} <br/></CardSubtitle>
+              <CardSubtitle>Released: {release_date} <br /></CardSubtitle>
               <p className="overView">{overview || "No resume found !"}</p>
-              <div className="text-left">Average vote :</div>
+              <div className="text-left">Average vote:</div>
               <Progress value={vote_average * 10}>{vote_average} / 10</Progress>
             </div>
           </Col>

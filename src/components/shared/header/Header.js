@@ -11,7 +11,7 @@ export default class Header extends Component {
     return (
       <div>
         <Row>
-          <Col lg={{ size: 1}} >
+          <Col lg={{ size: 1 }} >
             <div className="iconeBoots">
               <NavLink
                 to="/"
@@ -19,14 +19,14 @@ export default class Header extends Component {
                 <img className="icones" src={homeicone} alt="iconehome" title="Home" />
               </NavLink>
               <NavLink
-                to="/contact-us"
-                exact activeClassName= "selected">
-                <img className="icones" src={contacticone} alt="iconecontact" title="Contact" />
-              </NavLink>
-              <NavLink
                 to="/released-today"
                 exact activeClassName="selected">
                 <img className="icones" src={logostar} alt="iconetoday" title="Today's releases" />
+              </NavLink>
+              <NavLink
+                to="/contact-us"
+                exact activeClassName="selected">
+                <img className="icones" src={contacticone} alt="iconecontact" title="Contact" />
               </NavLink>
             </div>
           </Col>

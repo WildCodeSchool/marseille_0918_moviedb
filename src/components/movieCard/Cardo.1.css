@@ -62,15 +62,21 @@
     @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto|Montserrat');
  }
 
+ 
  @media (max-width:576px) {
 
     .textCard {
         margin-left: -5vh;
+        text-align: left;
     }
 
     .overView {
-        width: 200%;
+        width: 110%;
+    }
 
+    .sizeletter {
+        text-align: left;
+        width: 40vh;
     }
 
     .textEngloge {
