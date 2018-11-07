@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Mocarday from '../movieCard/Mocarday'
+
 import Carday from '../movieCard/Carday'
 
 export default class Releasedtoday extends Component {
@@ -7,7 +7,7 @@ export default class Releasedtoday extends Component {
     super(props);
     this.state = {
       oftheday: [],
-      currentMovieId: '',
+      currentMovieId: null,
       date: '',
     }
   }
@@ -50,15 +50,24 @@ export default class Releasedtoday extends Component {
       .then(data => this.setState({ oftheday: data.results, currentMovieId: data.results.id }))
      
       .catch(error => {
-        alert("oups")
+        alert("oups, rechargez la page !")
       })
-      console.log("what", this.state.oftheday)
+      console.log("whit", this.state.oftheday)
+      
   }
 
 
   render() {
+    
     if(this.state.oftheday.length > 0){
       console.log("what", this.state.oftheday)
+      console.log("ID", this.state.currentMovieId)
+
+
+      
+      
+      
+
 
         return (
             <div>
@@ -66,6 +75,7 @@ export default class Releasedtoday extends Component {
   
               if (index < 100 && item.overview !== "") {
                     return <Carday
+                       movId={item.id}
                        key={index}
                        title={item.title}
                        date={item.release_date}
