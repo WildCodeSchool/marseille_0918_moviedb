@@ -46,6 +46,7 @@ export default class singleMovie extends Component {
   render() {
     if(this.props.match.params.id != this.state.currentMovieId){
       this.fetchMovieById(this.props.match.params.id)
+      this.fetchMovieByDetail(this.props.match.params.id) 
     }
     console.log(this.state.movie.release_date)
     console.log(this.state.currentMovieId)
