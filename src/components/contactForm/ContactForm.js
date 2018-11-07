@@ -15,7 +15,7 @@ class ContactForm extends React.Component {
   submitForm = (event) => {
     event.preventDefault();
     console.log(JSON.stringify(this.state));
-    alert(`Your message is sent to ${this.state.email}`)
+    alert(`Thank you for your message ${this.state.email} !`)
   }
 
   onChange = (event) => {

@@ -36,7 +36,7 @@ export default class Header extends Component {
             <div className="title">
               <NavLink className="allTitle" to="/" style={{ textDecoration: 'none' }}>
                 <p className="fullTitle"><span className="titleCineasta">cineasta,<br /></span>
-                  <span className="subtitle">the SHORTER way to movie's release date ! and more...</span></p>
+                  <span className="subtitle">the SHORTEST way to movie's release date ! and more...</span></p>
               </NavLink>
             </div>
           </Col>
