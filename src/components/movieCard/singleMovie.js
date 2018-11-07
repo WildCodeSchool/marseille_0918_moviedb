@@ -49,6 +49,9 @@ export default class singleMovie extends Component {
     }
     console.log(this.state.movie.release_date)
     console.log(this.state.directorName)
+     
+    console.log("what", this.state.currentMovieId)
+      
     
     return (
       <div>

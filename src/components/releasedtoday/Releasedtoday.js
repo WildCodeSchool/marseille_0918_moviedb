@@ -7,7 +7,7 @@ export default class Releasedtoday extends Component {
     super(props);
     this.state = {
       oftheday: [],
-      currentMovieId: '',
+      currentMovieId: null,
       date: '',
     }
   }
@@ -52,13 +52,19 @@ export default class Releasedtoday extends Component {
       .catch(error => {
         alert("oups")
       })
-      console.log("what", this.state.oftheday)
+      console.log("whit", this.state.oftheday)
+      
   }
 
 
   render() {
     if(this.state.oftheday.length > 0){
       console.log("what", this.state.oftheday)
+      
+      
+      
+      
+
 
         return (
             <div>
@@ -66,6 +72,7 @@ export default class Releasedtoday extends Component {
   
               if (index < 100 && item.overview !== "") {
                     return <Carday
+                       movId={item.id}
                        key={index}
                        title={item.title}
                        date={item.release_date}
