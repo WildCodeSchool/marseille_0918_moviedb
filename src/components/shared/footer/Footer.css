@@ -1,0 +1,35 @@
+.englobFoot{
+    color: #888888;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.textFooter {
+    text-align: center;
+}
+
+.lienFooter{
+    text-decoration:none; 
+    color: #888888;
+}
+
+.lienFooter:hover{
+    color: #888888;
+}
+
+@media (max-width:576px) {
+    
+    footer{
+        font-size: 0.7em;
+        width: 90%;
+    }
+}

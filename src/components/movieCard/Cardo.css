@@ -1,0 +1,100 @@
+.posterCard {
+    border-radius: 10px 0 0 10px;
+    width: 250px;
+    margin-left: -15px; 
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.director {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    margin-bottom: -0.1vh;
+}
+
+.textCard {
+    margin: 15px 4px 0 105px;
+}
+
+.carteFilm {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.englobeCard {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    background: black;
+    color: white;
+    width: 80%;
+    -webkit-border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+.card-subtitle {
+    margin: 10px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.overView, .aveRage {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+}
+.progress {
+    margin-bottom: 15px;
+}
+
+.text-left {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+}
+
+.sizeletter {
+    font-weight: bolder;
+    font-size: 1.4em;
+    text-transform: lowercase;
+    font-family: 'LeagueSpartan';
+    text-align: center;
+}
+
+@font-face {
+     font-family: 'LeagueSpartan';
+     src: url('../shared/header/LeagueSpartan-Bold.otf');
+ }
+@font-face {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
+    @import url('https://fonts.googleapis.com/css?family=Heebo|Roboto|Montserrat');
+ }
+
+ @media (max-width:576px) {
+
+    .textCard {
+        margin-left: -5vh;
+    }
+
+    .overView {
+        width: 200%;
+
+    }
+
+    .textEngloge {
+        flex-grow: 0 !important;
+        width: 100%;
+    }
+
+     .posterCard {
+        border-radius: 10px;
+        width: 345px;;
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    } 
+
+
+    .englobeCard {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    }
+}

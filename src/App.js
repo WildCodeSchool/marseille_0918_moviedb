@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { Container } from 'reactstrap';
+import Home from './components/shared/home/Homes';
+import SearchBar from './components/searchBar/SearchBar';
+import singleMovie from './components/movieCard/singleMovie';
+import ContactForm from './components/contactForm/ContactForm';
+import Releasedtoday from './components/releasedtoday/Releasedtoday';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container fluid>
+        <Home />
+        <SearchBar />
+        <Switch>
+          <Route exact path="/movie/:id" component={singleMovie} />
+          <Route path="/contact-us" component={ContactForm} />
+          <Route path="/released-today" component={Releasedtoday} />
+        </Switch>
+      </Container>
     );
   }
 }
-
-export default App;

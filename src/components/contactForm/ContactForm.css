@@ -1,0 +1,105 @@
+.contactForm{
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 1vh;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  background: black;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+
+  .titrecontact {
+    margin-top: 5px;
+}
+
+  .centerContent{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  width: 100%;
+}
+
+.titrecontact{
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: LeagueSpartan;
+}
+
+#name:hover, #comment:hover, #email:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+  border-radius: 8px solid #888888;
+  border-color: darkgray;
+
+}
+
+fieldset .title {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  font-family: LeagueSpartan;
+}
+
+button.button.btn.btn-secondary {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+h1, legend, label{
+  
+  color: rgb(221, 238, 240);
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: grid; 
+}
+
+h1 .titrecontact {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#name, #comment , #email {
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@font-face {
+  font-family: LeagueSpartan;
+    src: url('../shared/header/LeagueSpartan-Bold.otf');
+}
+
+@media (max-width:576px) {
+  
+  .contactForm{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: black;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    }
+}
