@@ -5,8 +5,8 @@
 ### You can see the project here : [link of the blog](https://pacific-lowlands-87714.herokuapp.com/)
 
 # Presentation of the project
-"Projet 2 - L’école des fans (ReactJS / Redux / SCSS / ReactSTRAP), Mathias, Rebecca, Alexandra et Lisa"
-*insérer une description du projet* 
+"Projet fictif 2 - L’école des fans (ReactJS / Redux / SCSS / ReactSTRAP), Mathias, Rebecca, Alexandra et Lisa"
+*Création d'un site web responsive en utilisant l'API TMDb qui permet de rechercher la fiche d'un film rapidement (Bonus : et dans n'importe quelle langue!)* 
 
 
 # Require
